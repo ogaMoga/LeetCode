@@ -1,7 +1,7 @@
 package easy;
 
 public class SortArrayByParity {
-    public static int[] sortArrayByParity(int[] nums) {
+    public int[] sortArrayByParity(int[] nums) {
         for (int i = 0, j = nums.length - 1; i <= j;) {
             while (nums[i] % 2 == 0 && i < j) {
                 i++;

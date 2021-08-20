@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CourseSchedule {
-    public static boolean canFinish(int numCourses, int[][] prerequisites) {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
         ArrayList<Integer>[] graph = new ArrayList[numCourses];
         for (int i = 0; i < numCourses; i++) {
             graph[i] = new ArrayList<>(numCourses - 1);
@@ -17,7 +17,7 @@ public class CourseSchedule {
         return !hasCycle(graph);
     }
 
-    private static boolean hasCycle(ArrayList<Integer>[] graph) {
+    private boolean hasCycle(ArrayList<Integer>[] graph) {
         Color[] colors = new Color[graph.length];
         Arrays.fill(colors, Color.WHITE);
 
@@ -29,7 +29,7 @@ public class CourseSchedule {
         return false;
     }
 
-    private static boolean bfsCycleCheck(ArrayList<Integer>[] graph, int node, Color[] colors) {
+    private boolean bfsCycleCheck(ArrayList<Integer>[] graph, int node, Color[] colors) {
         if (colors[node] == Color.GRAY) {
             return true;
         }

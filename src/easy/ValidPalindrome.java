@@ -1,7 +1,7 @@
 package easy;
 
 public class ValidPalindrome {
-    public static boolean validPalindrome(String s) {
+    public boolean validPalindrome(String s) {
         int i = 0, j = s.length() - 1;
         while (i <= j) {
             while ((i < s.length()) && (!Character.isLetter(s.charAt(i))) && (!Character.isDigit(s.charAt(i)))) {

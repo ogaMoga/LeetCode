@@ -1,7 +1,7 @@
 package easy;
 
 public class PeakIndexInMountainArray {
-    public static int peakIndexInMountainArray(int[] arr) {
+    public int peakIndexInMountainArray(int[] arr) {
         int l = 0, r = arr.length - 1;
         while (l < r) {
             int m = (l + r) / 2;

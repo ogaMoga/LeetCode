@@ -1,7 +1,7 @@
 package easy;
 
 public class GuessNumberHigherOrLower {
-        public static int guessNumber(int n) {
+        public int guessNumber(int n) {
             int l = 1, r = n, m, result = 0;
             while (l < r) {
                 m = l + ((r - l) >> 1);

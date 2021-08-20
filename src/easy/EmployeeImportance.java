@@ -25,7 +25,7 @@ public class EmployeeImportance {
         return res;
     }
 
-    static class Employee {
+    class Employee {
         public int id;
         public int importance;
         public List<Integer> subordinates;

@@ -1,7 +1,7 @@
 package easy;
 
 public class ReverseOnlyLetters {
-    public static String reverseOnlyLetters(String s) {
+    public String reverseOnlyLetters(String s) {
         char[] src = s.toCharArray();
         for (int i = 0, j = src.length - 1; i < j;) {
             while (i < src.length && !Character.isLetter(src[i])) {

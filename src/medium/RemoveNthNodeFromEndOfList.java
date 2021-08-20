@@ -1,7 +1,7 @@
 package medium;
 
 public class RemoveNthNodeFromEndOfList {
-    public static class ListNode {
+    public class ListNode {
       int val;
       ListNode next;
       ListNode() {}

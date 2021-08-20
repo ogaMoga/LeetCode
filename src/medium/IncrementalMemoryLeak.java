@@ -1,7 +1,7 @@
 package medium;
 
 public class IncrementalMemoryLeak {
-    public static int[] memLeak(int memory1, int memory2) {
+    public int[] memLeak(int memory1, int memory2) {
         int time = 1;
         while (true) {
             if (memory1 >= memory2) {
