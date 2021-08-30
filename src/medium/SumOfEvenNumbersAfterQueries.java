@@ -1,4 +1,4 @@
-package easy;
+package medium;
 
 public class SumOfEvenNumbersAfterQueries {
     public int[] sumEvenAfterQueries(int[] nums, int[][] queries) {
